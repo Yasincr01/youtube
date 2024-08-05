@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>youtube</title>
+  <!-- Bootstrap cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./youtube.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Cardo:ital,wght@0,400;0,700;1,400&family=Ga+Maamli&family=Playwrite+CU:wght@100..400&family=Playwrite+FR+Trad:wght@100&family=Space+Grotesk:wght@300...400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-black">
+
+    <div class="navi">
+    <nav class="navbar bg-body-black text-white">
+      <div class="container-fluid ">
+        <div class="Space d-flex flex-row">
+          <a id="menu" class="icn fs-4 ms-1" href=""><i class="fa-solid fa-bars"></i></a>
+          <img width="35px" height="25px" class="yt ms-3 mt-2" src="./images/youtube.png" alt="">
+          <h2 class="fs-4 mt-1">Youtube</h2>
+          <span class="in">IN</span>
+        </div>
+        <form class="d-md-flex d-none w-50" role="search">
+          <input class="form-control bar bg-black  border-dark " type="search" placeholder ="Search"
+            aria-label="Search">
+          <a id="search" class="icn bg-dark" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+
+          <a id="mic" class="icn  ms-2 bg-dark" href=""><i class="fa-solid fa-microphone"></i></a>
+
+        </form>
+        <div class="space1 me-3 ">
+          <a id="searci" class="si  fs-4 me-3 text-white d-md-none" href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a id="video" class="icn fs-4 me-3" href=""><i class='bx bx-video-plus'></i></a>
+          <a id="bell" class="icn fs-5 me-3" href=""><i class="fa-regular fa-bell"></i></a>
+          <a id="user" class="icn rounded-circle bg-info p-1 ps-2 pe-2 fs-5 me-3" href=""> <i
+              class="fa-solid fa-user"></i></a>
+        </div>
+
+
+      </div>
+    </nav>
+    </div>
+
+<!-- <div class="all d-flex">
+     
+</div> -->
+    
+    <div class="all d-flex">
+
+    <div class="section1">
+      <div class="side ms-2 me-4 mt-5 d-md-flex flex-column d-none pt-3 mt-lg-5">
+        <a class="nav-link text-white bg-dark rounded ps-2 pt-1 pb-1" href=""> <i
+            class="fa-solid fa-house pe-4"></i><b>Home</b></a>
+        <a class="nav-link text-white pt-1 pb-1" href=""><img class="shot me-3" width="35px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkDAqPU5j7UyRNGfJNGEfOqpsiDgvqTNQR96KMU4Z4QpNPDXnnWiPkh17mrfR3pzZWWI&usqp=CAU" alt="">Shorts</a>
+        <a class="nav-link text-white  ps-2 pt-1 pb-1" href=""><i
+            class='bx bx-slideshow pe-4 fs-4'></i>Subscriptions</a>
+
+        <hr class="text-white">
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><b>You</b><i
+            class="fa-solid fa-chevron-right ps-3"></i></a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""> <i class='bx bxs-user-account pe-4 fs-4'></i>Your
+          Channel</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-time-five pe-4 fs-4'></i>History</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bxs-playlist pe-4 fs-4'></i>Playlists</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i
+            class="fa-regular fa-square-caret-right pe-4 fs-4"></i>Your
+          videos</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-time-five pe-4 fs-4'></i>Watch later</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-like pe-4 fs-4'></i>Liked videos</a>
+
+        <hr class="text-white">
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><b>Explore</b></a>
+        <a class="nav-link text-white ps-3 pt-1 pb-1" href=""><i class="fa-solid fa-fire pe-3"></i> Trending</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-shopping-bag pe-3 fs-4'></i> Shopping</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-music pe-4 fs-4'></i>Music</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-movie pe-4 fs-4'></i>Movies</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-station pe-4 fs-4'></i>Live</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-joystick pe-4 fs-4'></i>Gaming</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-news pe-4 fs-4'></i>News</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-trophy pe-4 fs-4'></i>Sports</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i
+            class="fa-regular fa-lightbulb pe-4 fs-4"></i>Courses</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-closet pe-4 fs-4'></i>Fashion & Beauty</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class="fa-solid fa-podcast pe-4 fs-4"></i>Podcasts</a>
+
+        <hr class="text-white">
+        <a class="nav-link text-white ps-1 pt-1 pb-1" href=""><b>More from Youtube</b></a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><img class="music pe-2" width="38px"
+            src="./images/youtube.png" alt="">Youtube
+          Premium</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><img class="music pe-3" width="38px"
+            src="./images/music.png" alt="">Youtube Music</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><img class="music pe-3" width="38px"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/YouTube_Kids_LogoVector.svg/1200px-YouTube_Kids_LogoVector.svg.png"
+            alt="">Youtube Kids</a>
+
+        <hr class="text-white">
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-cog pe-4'></i>Settings</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class="fa-regular fa-flag pe-4"></i>Report history</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-help-circle pe-4'></i>Help</a>
+        <a class="nav-link text-white ps-2 pt-1 pb-1" href=""><i class='bx bx-comment-error pe-4'></i>Send feedback</a>
+
+        <hr class="text-white">
+        <a class="nav-link text-secondary ps-2" href="">About</a>
+        <a class="nav-link text-secondary ps-2" href="">Press</a>
+        <a class="nav-link text-secondary ps-2" href="">Copyright</a>
+        <a class="nav-link text-secondary ps-2" href="">Contact us</a>
+        <a class="nav-link text-secondary ps-2" href="">Creators</a>
+        <a class="nav-link text-secondary ps-2" href="">Advertise</a>
+        <a class="nav-link text-secondary ps-2" href="">Developers</a>
+        <br>
+        <a class="nav-link text-secondary ps-2" href="">Terms</a>
+        <a class="nav-link text-secondary ps-2" href="">Privacy</a>
+        <a class="nav-link text-secondary ps-2" href="">Policy & Safety</a>
+        <a class="nav-link text-secondary ps-2" href="">How Youtube Works</a>
+        <a class="nav-link text-secondary ps-2" href="">Test new features</a>
+        <br>
+        <span class="cr ps-2 text-secondary pb-2">&copy;2024 Google LLC</span>
+
+      </div>
+    </div>
+
+    <div class="section2 ">
+
+    <nav class="navbar1 bg-body-black text-white mt-5 p-3">
+      <div class="container-fluid d-lg-flex justify-content-between d-none">
+        <h3 class="hd3 bg-white text-black">All</h3>
+        <h3 class="hd3 bg-dark text-white">Music</h3>
+        <h3 class="hd3 bg-dark text-white">Live</h3>
+        <h3 class="hd3 bg-dark text-white">News</h3>
+        <h3 class="hd3 bg-dark text-white">Playlists</h3>
+        <h3 class="hd3 bg-dark text-white">Mixes</h3>
+        <h3 class="hd3 bg-dark text-white">Indian pop music</h3>
+        <h3 class="hd3 bg-dark text-white">Tamil Cinema</h3>
+        <h3 class="hd3 bg-dark text-white">Indian cuisine</h3>
+        <h3 class="hd3 bg-dark text-white">Ambient Music</h3>
+        <h3 class="hd3 bg-dark text-white">Arijit Singh</h3>
+        <h3 class="hd3 bg-dark text-white">Body-Building</h3>
+        <h3 class="hd3 bg-dark"><i class="fa-solid fa-chevron-right"></i></h3>
+  
+  </div>
+
+    </nav>
+
+    <div class="cards d-flex justify-content-evenly align-items-center flex-wrap">
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px"
+            src="https://storage.googleapis.com/gweb-cloudblog-publish/images/Hero_Blog_innovatorsplus.max-2500x2500.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <p class="card-text text-white "> <b>Reliable and high performance cloud <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br> services. Start your free trial today.</b>
+            </p>
+            <span class="small text-secondary"><b class="text-white">Sponsored</b> - Google Cloud</span>
+            <div class="buttons mt-2 "><a href="#"
+                class="btn btn-bg-dark border text-primary rounded-5 text-primary ps-5 pe-5 watch">Watch</a> <a href=""
+                class=" btn text-primary rounded-5 ps-5 pe-5 more">Learn more</a> </div>
+          </div>
+        </div>
+
+        <div class="card bg-black ms-2 mt-4" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/hOHKltAiKXQ/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center  rounded"></div> -->
+            <p class="card-text text-white"><b> 
+              <img width="30px"
+              class="log rounded-5 me-1" src="https://yt3.googleusercontent.com/_rO8IOjqWOx-nB8q3TX0Wag1McsdxxNgT2CF9m-oLU5U7H-p0QdEuPkDC37Hjldu7pjzd0X4Og=s160-c-k-c0x00ffffff-no-rj
+            " alt="">Hanumankind - Big Dawgs|Ft.Kalmi <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Official Music Video)|Def jam India.</b>
+            </p>
+            <span class="small text-secondary ms-4">Hanumankind <i class='bx bx-music ps-1'></i></span> <span
+              class="small text-secondary ms-4"> 50 lakh views -
+              2 weeks ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+        <div class="card  bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/odH_SLHrP78/maxresdefault_live.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.ggpht.com/a-/AAuE7mBp95rD6C6pbe38Ke2p8v9nTFsDsdrRILKGfw=s900-mo-c-c0xffffffff-rj-k-no"
+              alt=""> Wayanad Landslide|Repoter TV Live| <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Malayalam News|Kerala Latest
+                News|...</b></p>
+            <span class="small text-secondary ms-4">REPORTER LIVE <i class="fa-solid fa-circle-check ms-1"></i></span> <span
+              class="small1 text-secondary ms-4">47k watching</span>
+            <a href="#" class="btn btn-danger text-white pt-0 pb-0 ps-2 pe-2 ms-4"><i
+                class='bx bx-station pe-1 '></i>Live</a>
+          </div>
+        </div>
+        <!-- <div class="cards d-flex justify-content-evenly align-items-center flex-wrap"> -->
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/3ugDKM7jYNk/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1" src="https://yt3.googleusercontent.com/0mTfnpHh5ELZeG7zWNrrjcXDhBT7UIpwiQ7Ne-dHrHYBk_718GrML7DuDTOKKzIr9vqWc5h6-Q=s160-c-k-c0x00ffffff-no-rj
+            " alt="">Mix-Samjho Na x Wishes (Mashup)| <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Abstract Cartoons|Aditya Rikhari|Hasan...</b>
+            </p>
+            <span class="small text-secondary ms-4">Hasan Raheem,Abstract Cartoons,Uraan and more</span>
+            <br> <br> <br>
+
+          </div>
+        </div>
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/d8uxCmVZRPE/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+
+
+
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   rounded"></div> -->
+
+            <p class="card-text text-white "><b><img width="30px"
+                class="log rounded-5 me-1" src="https://yt3.googleusercontent.com/gEuga1T09RrSUwzWCqgkQdpNgQvyVQ7u5RZ-_1tPLd4nI-l0riEpLGUgQI7UlSXm9B7DlmkEyw=s160-c-k-c0x00ffffff-no-rj
+              " alt="">WILD WORLD DOLBY VISION | <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXTREME COLORS [8K HDR]</b>
+            </p>
+            <span class="small text-secondary ms-4">8K Paradise <i class="fa-solid fa-circle-check ms-1"></i></span> <span
+              class="small1 text-secondary ms-4">18M views - 7 months ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+        <div class="card  bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/nSNkwIvlWJU/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/ytc/AIdro_mzpGZgfhPoWaAukjvffGYTwdJj2bNIcm6ocNZ_yhB-bbWY=s160-c-k-c0x00ffffff-no-rj"
+              alt="">FULL MATCH - Brock Lesner vs. <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roman Reigns - Universal Title...</b></p>
+            <span class="small text-secondary ms-4">WWE <i class="fa-solid fa-circle-check ms-1"></i></span> <span
+              class="small1 text-secondary ms-4">47 lakh views - 3 years ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+    <!-- </div>
+
+
+    <div class="cards d-flex justify-content-evenly align-items-center flex-wrap"> -->
+
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/lFhhybtQNIk/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/45GLmxWWG1Yp9hmOTpgRa663pRc3WIO6EPQD0N3fE71Ep7R_UHNLlScvKNTg1g2lPgvH5BA5=s160-c-k-c0x00ffffff-no-rj"
+              alt="">Iron Man 4 - Teaser Trailer|Robert <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Downey Jr., Katherine Langford</b>
+            </p>
+            <span class="small text-secondary ms-4"> KH Studio <i class="fa-solid fa-circle-check ms-1"></i></span> <span
+              class="small1 text-secondary ms-4"> 12 lakh views - 1
+              month ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/6wScVSo0EpE/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/H2iVobIT5dpeQdVaxYO4EbWNeSnSuu-UuiIJKMy0l8l-KVY_bpXe2rQt38mf2KwWN20RgJ2fkQ=s160-c-k-c0x00ffffff-no-rj"
+              alt="">WE CAN'T LAND! The Incredible <i
+                  class="fa-solid fa-ellipsis-vertical"></i><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Story of Air India 101</b></p>
+            <span class="small text-secondary ms-4">Wyngx </span> <span class="small1 text-secondary ms-4"> 49 lakh views - 8
+              months ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+        <div class="card  bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/-9EtpMh4-_c/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+                class="log rounded-5 me-1"
+                src="https://yt3.googleusercontent.com/kSWAruzgqJlYW4C7wH9MGYRi0syYURCCfYz7lYb5squt4Ee1swMlywzZPIChyOd-6xyV6ZBVUA=s160-c-k-c0x00ffffff-no-rj"
+                alt="">Even Pro Fighters Are Afraid Of This <i
+                  class="fa-solid fa-ellipsis-vertical"></i> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Preacher Because He Is The ...</b></p>
+            <span class="small text-secondary ms-4">MrRecapFromYoutube <i class="fa-solid fa-circle-check ms-1"></i></span>
+            <span class="small1 text-secondary ms-4">35 lakh views - 1 month ago
+              ago</span>
+            <br><br>
+          </div>
+        </div>
+
+
+
+        <!-- </div> -->
+
+        <!-- <div class="cards d-flex justify-content-evenly align-items-center flex-wrap"> -->
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px"
+            src="https://timesofindia.indiatimes.com/photo/msid-110987523,imgsize-118069.cms" class="card-img-top"
+            alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/dzgLCjRr-jI96sRdV8Ovl6F3LafGEh3a777hPBBwkN5VL2pixr98frJJwFL8fZQKBg289O574A=s160-c-k-c0x00ffffff-no-rj"
+              alt=""> Sai Abhyankkar - Aasa Kooda (Music <i
+                  class="fa-solid fa-ellipsis-vertical"></i> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Video)|Thejo Bharathwaj|Preity... </b></p>
+            <span class="small text-secondary ms-4">Think Music India <i class="fa-solid fa-circle-check ms-1"></i></span>
+            <span class="small1 text-secondary ms-4">5.5 crore
+              views - 1 month ago </span>
+            <br><br>
+          </div>
+        </div>
+
+        <div class="card bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/0cd1eefe-973d-46aa-b070-36d9c4e106ef/dcl3zui-ed948194-3969-4a04-9441-ad3ff55630b1.jpg/v1/fill/w_1600,h_959,q_70,strp/khabib_vs_mcgregor_ufc_229_wallpaper_by_zeroplus123_dcl3zui-fullview.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b> <img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/BHfbCbg4x6VgO5sEDv0E5odG2ML9NOYxuDN8r91FhI1j0HFu2ulIus3j2D4M-7fdQvwBrgXX=s160-c-k-c0x00ffffff-no-rj"
+              alt="">Khabib Nurmagomedov vs Conor <i
+                  class="fa-solid fa-ellipsis-vertical"></i> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;McGregor|FULL FIGHT|UFC...</b>
+            </p>
+            <span class="small text-secondary ms-4">UFC <i class="fa-solid fa-circle-check ms-1"></i></span> <span
+              class="small1 text-secondary ms-4"> 3 crore views -
+              9 months ago</span>
+            <br> <br>
+          </div>
+        </div>
+
+        <div class="card  bg-black ms-2" style="width: 25rem;">
+          <img width="365px" height="220px" src="https://i.ytimg.com/vi/JlWVbl_WKmY/maxresdefault.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body d-flex align-items-start flex-column">
+            <!-- <div class="pf d-flex flex-column align-items-center justify-content-center   ronded"></div> -->
+
+            <p class="card-text text-white"><b><img width="30px"
+              class="log rounded-5 me-1"
+              src="https://yt3.googleusercontent.com/opab1DbA6NgaKktNIVNAzWG1zDPmIxTtR_4Kn03nPmlUMQQ9GGQiMy-zjGUS1imo_tI_CGLK=s160-c-k-c0x00ffffff-no-rj"
+              alt=""> Nobody Cares,Work Harder. <i
+                  class="fa-solid fa-ellipsis-vertical"></i></b></p>
+            <span class="small text-secondary ms-4">InspiredByFlorian <br>9 lakh views - 1 month ago</span>
+            <br> <br> <br>
+          </div>
+        </div>
+
+
+        <!-- </div> -->
+
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
